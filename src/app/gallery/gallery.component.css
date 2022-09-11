@@ -1,0 +1,90 @@
+.carousel-item {
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.space {
+    height: 0px;
+}
+
+.carousel-control-prev {
+    cursor: url('../Icons/arrow_back_ios_white_48dp.svg'), auto;
+}
+
+.carousel-control-next {
+    cursor: url('../Icons/arrow_forward_ios_white_48dp.svg'), auto;
+}
+
+img {
+    image-rendering: optimizeQuality;
+    object-fit: fill;
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+}
+
+mat-grid-tile,
+img {
+    image-rendering: optimizeQuality;
+    width: auto;
+    height: auto;
+    object-fit: fill;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.box1 {
+    height: 100vh;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-background-position: center;
+    -moz-background-position: center;
+    -o-background-position: center;
+    background-position: center;
+    display: table;
+    background-attachment: fixed;
+}
+
+@supports (-webkit-touch-callout: none) {
+    .box1 {
+        background-attachment: local;
+    }
+}
+
+@supports not (-webkit-touch-callout: none) {
+    .box1 {
+        background-attachment: fixed;
+    }
+}
+
+@media (max-width:950px) {
+    .space {
+        height: 45px;
+    }
+}
+
+.tiles {
+    backdrop-filter: blur(20px) contrast(110%);
+}
+
+.tilesImg {
+    cursor: url('../Icons/pan_tool_alt_black_44dp.svg'), auto;
+}
